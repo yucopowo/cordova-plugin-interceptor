@@ -21,39 +21,39 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cordova-plugin-device"
-    version="1.1.8-dev">
-    <name>Device</name>
-    <description>Cordova Device Plugin</description>
+    id="cordova-plugin-interceptor"
+    version="0.0.1-dev">
+    <name>Interceptor</name>
+    <description>Cordova Interceptor Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,device</keywords>
-    <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git</repo>
-    <issue>https://issues.apache.org/jira/browse/CB/component/12320648</issue>
+    <repo>https://github.com/yucopowo/cordova-plugin-interceptor.git</repo>
+    <issue>https://github.com/yucopowo/cordova-plugin-interceptor/issues</issue>
 
-    <js-module src="www/device.js" name="device">
-        <clobbers target="device" />
+    <js-module src="www/interceptor.js" name="interceptor">
+        <clobbers target="interceptor" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="Device" >
-                <param name="android-package" value="org.apache.cordova.device.Device"/>
+            <feature name="Interceptor" >
+                <param name="android-package" value="org.apache.cordova.interceptor.Interceptor"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/Device.java" target-dir="src/org/apache/cordova/device" />
+        <source-file src="src/android/Interceptor.java" target-dir="src/org/apache/cordova/interceptor" />
     </platform>
 
     <!-- browser -->
     <platform name="browser">
         <config-file target="config.xml" parent="/*">
-            <feature name="Device">
-                <param name="browser-package" value="Device" />
+            <feature name="Interceptor">
+                <param name="browser-package" value="Interceptor" />
             </feature>
         </config-file>
 
-        <js-module src="src/browser/DeviceProxy.js" name="DeviceProxy">
+        <js-module src="src/browser/InterceptorProxy.js" name="InterceptorProxy">
             <runs />
         </js-module>
     </platform>

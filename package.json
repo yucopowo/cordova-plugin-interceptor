@@ -1,10 +1,9 @@
 {
-  "name": "cordova-plugin-device",
-  "version": "1.1.8-dev",
-  "description": "Cordova Device Plugin",
-  "types": "./types/index.d.ts",
+  "name": "cordova-plugin-interceptor",
+  "version": "0.0.1-dev",
+  "description": "Cordova Interceptor Plugin",
   "cordova": {
-    "id": "cordova-plugin-device",
+    "id": "cordova-plugin-interceptor",
     "platforms": [
       "android",
       "browser"
@@ -12,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/apache/cordova-plugin-device"
+    "url": "https://github.com/yucopowo/cordova-plugin-interceptor"
   },
   "bugs": {
-    "url": "https://issues.apache.org/jira/browse/CB"
+    "url": "https://github.com/yucopowo/cordova-plugin-interceptor/issues"
   },
   "keywords": [
     "cordova",
@@ -36,8 +35,6 @@
     "cordova-osx"
   ],
   "scripts": {
-    "test": "npm run eslint",
-    "eslint": "node node_modules/eslint/bin/eslint www && node node_modules/eslint/bin/eslint src && node node_modules/eslint/bin/eslint tests"
   },
   "author": "Apache Software Foundation",
   "license": "Apache-2.0",
